@@ -28,7 +28,7 @@ function Build($build,$codecov,$configuration)
     {
         $properties+=",CodeCov=true"
     }
-    BuildSolution "$($build.Name).sln" $properties
+    BuildSolution "Tests\Magick.NET.Tests\Magick.NET.Tests.csproj" $properties
 }
 
 function BuildSolution($solution, $properties)

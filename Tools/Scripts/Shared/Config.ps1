@@ -11,22 +11,22 @@
 # and limitations under the License.
 
 $builds = @(
-  @{Name = "Magick.NET"; Quantum = "Q8";       Platform = "x86"}
-  @{Name = "Magick.NET"; Quantum = "Q8";       Platform = "x64"}
-  @{Name = "Magick.NET"; Quantum = "Q16";      Platform = "x86"}
-  @{Name = "Magick.NET"; Quantum = "Q16";      Platform = "x64"}
-  @{Name = "Magick.NET"; Quantum = "Q16-HDRI"; Platform = "x86"}
-  @{Name = "Magick.NET"; Quantum = "Q16-HDRI"; Platform = "x64"}
+  @{Quantum = "Q8";       Platform = "x86"}
+  @{Quantum = "Q8";       Platform = "x64"}
+  @{Quantum = "Q16";      Platform = "x86"}
+  @{Quantum = "Q16";      Platform = "x64"}
+  @{Quantum = "Q16-HDRI"; Platform = "x86"}
+  @{Quantum = "Q16-HDRI"; Platform = "x64"}
 )
 $anyCPUbuilds = @(
-  @{Name = "Magick.NET"; Quantum = "Q8";       Platform = "AnyCPU"}
-  @{Name = "Magick.NET"; Quantum = "Q16";      Platform = "AnyCPU"}
-  @{Name = "Magick.NET"; Quantum = "Q16-HDRI"; Platform = "AnyCPU"}
+  @{Quantum = "Q8";       Platform = "AnyCPU"}
+  @{Quantum = "Q16";      Platform = "AnyCPU"}
+  @{Quantum = "Q16-HDRI"; Platform = "AnyCPU"}
 )
 $openMPbuilds = @(
-  @{Name = "Magick.NET"; Quantum = "Q8";       Platform = "x64"}
-  @{Name = "Magick.NET"; Quantum = "Q16";      Platform = "x64"}
-  @{Name = "Magick.NET"; Quantum = "Q16-HDRI"; Platform = "x64"}
+  @{Quantum = "Q8";       Platform = "x64"}
+  @{Quantum = "Q16";      Platform = "x64"}
+  @{Quantum = "Q16-HDRI"; Platform = "x64"}
 )
 
 function GetBuilds($quantum, $platform)
